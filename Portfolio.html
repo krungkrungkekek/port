@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Regino, Fritch Gerald V.</h1>
+        <nav>
+            
+                <a href="#intro">Home</a>
+                <a href="#Projects">Projects</a>
+                <a href="#footer">Contact</a>
+                
+           
+        </nav>
+    </header>
+    <section id="intro">
+        <h2>Hi, I'm Regino</h2>
+        <p>I'm a web developer passionate about crafting, user-friendly websites</p>
+        <button id="dark-mode-toggle">Dark Mode</button>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <ul>
+            
+            <div class="project-card">
+               <a href="cat.html" target="_blank">Cat Photos</a>
+            </div>
+
+            <div class="project-card">
+                <a href="Cafe.html" target="_blank">Cafe Menu</a>
+            </div>
+
+            <div class="project-card">
+                <a href="color.html" target="_blank">Colored Markers</a>
+
+            </div>
+
+            <div class="project-card">
+                <a href="registration.html" target="_blank">Registration Form</a>
+            </div>
+
+            <div class="project-card">
+                <a href="survey.html" target="_blank">Survey Form</a>
+            </div>
+
+            <div class="project-card">
+                <a href="rothko.html" target="_blank">Rothko Painting</a>
+            </div>
+
+            <div class="project-card">
+                <a href="photo.html" target="_blank">Photo Gallery</a>
+            </div>
+
+            <div class="project-card">
+                <a href="nutrition.html" target="_blank">Nutrition Label</a>
+            </div>
+
+            <div class="project-card">
+                <a href="quiz.html" target="_blank">Quiz</a>
+            </div>
+
+            <div class="project-card">
+                <a href="tribute.html" target="_blank">Tribute Page</a>
+            </div>
+
+            <div class="project-card">
+                <a href="balance.html" target="_blank">Balance Sheet</a>
+            </div>
+
+            <div class="project-card">
+                <a href="catpaint.html" target="_blank">Cat Painting</a>
+            </div>
+
+            
+            <div class="project-card">
+                <a href="piano.html" target="_blank">Building a Piano</a>
+            </div>
+
+            <div class="project-card">
+                <a href="technical.html" target="_blank">Technical Documentation Page</a>
+            </div>
+
+            <div class="project-card">
+                <a href="skyline.html" target="_blank">City Skyline</a>
+            </div>
+
+            <div class="project-card">
+                <a href="magazine.html" target="_blank">Magazine</a>
+            </div>
+
+            <div class="project-card">
+                <a href="landing.html" target="_blank">Product landing Page</a>
+            </div>
+
+            <div class="project-card">
+                <a href="wheel.html" target="_blank">Ferris Wheel</a>
+            </div>
+            
+            <div class="project-card">
+                <a href="penguin.html" target="_blank">Penguin</a>
+            </div>
+
+        </ul> 
+    </section>
+    <footer id="footer">
+        <p>Let's connect!</p>
+        <div class="social-links">
+            <a href="#">Twitter</a>
+            <a href="#">Github</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <button id="scroll-to-top">↑</button>
+    </footer>
+
+    
+</body>
+
+<script>
+
+    const darkModeToggle = document.querySelector('#dark-mode-toggle');
+    const body = document.body;
+
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
+    });
+
+    const scrollToTopButton = document.querySelector('#scroll-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 100) {
+            scrollToTopButton.style.display = 'block';
+        } else {
+            scrollToTopButton.style.display = 'none';
+        }
+    });
+
+    scrollToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+</html>

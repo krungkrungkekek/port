@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="survey.html">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">We’d love to hear your feedback! Please fill out this form.</p>
+
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <label for="number" id="number-label">Age:</label>
+    <input type="number" id="number" min="18" max="100" placeholder="Enter your age" required>
+
+    <label for="dropdown">Choose your favorite framework:</label>
+    <select id="dropdown" required>
+      <option value="React">React</option>
+      <option value="Vue">Vue</option>
+      <option value="Angular">Angular</option>
+    </select>
+
+    <fieldset>
+      <legend>What is your level of experience with programming?</legend>
+      <label for="beginner">
+        <input type="radio" name="experience" id="beginner" value="Beginner"> Beginner
+      </label>
+      <label for="intermediate">
+        <input type="radio" name="experience" id="intermediate" value="Intermediate"> Intermediate
+      </label>
+      <label for="expert">
+        <input type="radio" name="experience" id="expert" value="Expert"> Expert
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Which technologies are you familiar with?</legend>
+      <label for="html">
+        <input type="checkbox" id="html" value="HTML"> HTML
+      </label>
+      <label for="css">
+        <input type="checkbox" id="css" value="CSS"> CSS
+      </label>
+      <label for="javascript">
+        <input type="checkbox" id="javascript" value="JavaScript"> JavaScript
+      </label>
+      <label for="node">
+        <input type="checkbox" id="node" value="Node.js"> Node.js
+      </label>
+    </fieldset>
+
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" placeholder="Tell us more..." rows="4" required></textarea>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+
+</body>
+</html>
