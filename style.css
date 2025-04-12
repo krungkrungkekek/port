@@ -1,11 +1,11 @@
             header {
-                background: linear-gradient(135deg, #ff4757, #51e9f4);
+                background: linear-gradient(135deg, #7420ac, #51e9f4);
                 padding: 20px;
                 text-align: center;
             }
 
             body {
-                background: linear-gradient(135deg, #b9222f, #51e9f4);
+                background: linear-gradient(135deg, #4f1c91, #51e9f4);
                 padding: 20px;
 
 
@@ -45,7 +45,7 @@
                 margin: 40px auto;
                 padding: 20px;
                 text-align: center;
-                background: #802f578f;
+                background: #8553c586;
                 border-radius: 15px;
                 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.197);
             }
